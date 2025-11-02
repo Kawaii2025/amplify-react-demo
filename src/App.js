@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { AlertCircle, CheckCircle, RefreshCw, Server, Cloud, Github } from 'lucide-react';
 
-// API Configuration
-// In production, this should be set via environment variables
-// For demo purposes, we'll use a placeholder
-const API_BASE_URL = 'http://localhost:8080';
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:8080';
 
 function App() {
   const [users, setUsers] = useState([]);
