@@ -12,7 +12,7 @@ function App() {
   // Check API health
   const checkApiHealth = async () => {
     try {
-      const response = await fetch(`${API_BASE_URL}/actuator/health`, {
+      const response = await fetch(`${API_BASE_URL}/api/health`, {
         method: 'GET',
         headers: { 'Content-Type': 'application/json' }
       });
